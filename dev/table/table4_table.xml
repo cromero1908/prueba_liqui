@@ -5,16 +5,34 @@
 	xmlns:n0="http://www.oracle.com/xml/ns/dbchangelog-ext" 
 	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog 
 	http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
-	<changeSet id="c684b6dfcbf6f680cf75b908770f8d71d87bca2f" author="(CROMERO)-Generated"     >
-		<n0:createSxmlObject objectName="TABLE1" objectType="TABLE" ownerName="CROMERO"   >
+	<changeSet id="9ab833f1cb7874f044acf9c7afe519dd2a845be6" author="(CROMERO)-Generated"     >
+		<n0:createSxmlObject objectName="TABLE4" objectType="TABLE" ownerName="CROMERO"   >
 			<n0:source><![CDATA[
   <TABLE xmlns="http://xmlns.oracle.com/ku" version="1.0">
    <SCHEMA>CROMERO</SCHEMA>
-   <NAME>TABLE1</NAME>
+   <NAME>TABLE4</NAME>
    <RELATIONAL_TABLE>
       <COL_LIST>
          <COL_LIST_ITEM>
             <NAME>COLUMN1</NAME>
+            <DATATYPE>VARCHAR2</DATATYPE>
+            <LENGTH>20</LENGTH>
+            <COLLATE_NAME>USING_NLS_COMP</COLLATE_NAME>
+         </COL_LIST_ITEM>
+         <COL_LIST_ITEM>
+            <NAME>COLUMN2</NAME>
+            <DATATYPE>VARCHAR2</DATATYPE>
+            <LENGTH>20</LENGTH>
+            <COLLATE_NAME>USING_NLS_COMP</COLLATE_NAME>
+         </COL_LIST_ITEM>
+         <COL_LIST_ITEM>
+            <NAME>COLUMN3</NAME>
+            <DATATYPE>VARCHAR2</DATATYPE>
+            <LENGTH>20</LENGTH>
+            <COLLATE_NAME>USING_NLS_COMP</COLLATE_NAME>
+         </COL_LIST_ITEM>
+         <COL_LIST_ITEM>
+            <NAME>COLUMN4</NAME>
             <DATATYPE>VARCHAR2</DATATYPE>
             <LENGTH>20</LENGTH>
             <COLLATE_NAME>USING_NLS_COMP</COLLATE_NAME>
