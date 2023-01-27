@@ -5,7 +5,7 @@
 	xmlns:n0="http://www.oracle.com/xml/ns/dbchangelog-ext" 
 	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog 
 	http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
-	<changeSet id="563c57ce5b276def7c97f582f39dfe41547f1efd" author="(CROMERO)-Generated" failOnError="false"   runInTransaction="false"  >
+	<changeSet id="79f9014fd0525f7568e2a465bfa453a0aa708a1d" author="(CROMERO)-Generated" failOnError="false"   runInTransaction="false"  >
 		<n0:runOracleScript objectName="SCRIPT" objectType="APEX" ownerName="CROMERO" sourceType="STRING"  >
 			<n0:source><![CDATA[prompt --application/shared_components/user_interface/templates/page/drawer
 begin
@@ -15,13 +15,13 @@ begin
 wwv_flow_imp.component_begin (
  p_version_yyyy_mm_dd=>'2022.10.07'
 ,p_release=>'22.2.0'
-,p_default_workspace_id=>1600932744521351
+,p_default_workspace_id=>3208475405000085
 ,p_default_application_id=>100
 ,p_default_id_offset=>0
 ,p_default_owner=>'CROMERO'
 );
 wwv_flow_imp_shared.create_template(
- p_id=>wwv_flow_imp.id(1606919167919568)
+ p_id=>wwv_flow_imp.id(3214495081014267)
 ,p_theme_id=>42
 ,p_name=>'Drawer'
 ,p_internal_name=>'DRAWER'
@@ -153,8 +153,8 @@ wwv_flow_imp_shared.create_template(
 ,p_reference_id=>1659739787629394056
 );
 wwv_flow_imp_shared.create_page_tmpl_display_point(
- p_id=>wwv_flow_imp.id(1607220334919590)
-,p_page_template_id=>wwv_flow_imp.id(1606919167919568)
+ p_id=>wwv_flow_imp.id(3214703527014298)
+,p_page_template_id=>wwv_flow_imp.id(3214495081014267)
 ,p_name=>'Content Body'
 ,p_placeholder=>'BODY'
 ,p_has_grid_support=>true
@@ -165,8 +165,8 @@ wwv_flow_imp_shared.create_page_tmpl_display_point(
 ,p_max_fixed_grid_columns=>12
 );
 wwv_flow_imp_shared.create_page_tmpl_display_point(
- p_id=>wwv_flow_imp.id(1607525509919592)
-,p_page_template_id=>wwv_flow_imp.id(1606919167919568)
+ p_id=>wwv_flow_imp.id(3215043063014301)
+,p_page_template_id=>wwv_flow_imp.id(3214495081014267)
 ,p_name=>'Dialog Header'
 ,p_placeholder=>'REGION_POSITION_01'
 ,p_has_grid_support=>false
@@ -176,8 +176,8 @@ wwv_flow_imp_shared.create_page_tmpl_display_point(
 ,p_glv_new_row=>true
 );
 wwv_flow_imp_shared.create_page_tmpl_display_point(
- p_id=>wwv_flow_imp.id(1607848061919593)
-,p_page_template_id=>wwv_flow_imp.id(1606919167919568)
+ p_id=>wwv_flow_imp.id(3215311631014301)
+,p_page_template_id=>wwv_flow_imp.id(3214495081014267)
 ,p_name=>'Dialog Footer'
 ,p_placeholder=>'REGION_POSITION_03'
 ,p_has_grid_support=>false

@@ -5,7 +5,7 @@
 	xmlns:n0="http://www.oracle.com/xml/ns/dbchangelog-ext" 
 	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog 
 	http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
-	<changeSet id="a938e8f0a76c39b31ca4eb61d7072152fbb0175d" author="(CROMERO)-Generated" failOnError="false"   runInTransaction="false"  >
+	<changeSet id="258853338d76df7733e69d32b0da82ef1f5f9a35" author="(CROMERO)-Generated" failOnError="false"   runInTransaction="false"  >
 		<n0:runOracleScript objectName="SCRIPT" objectType="APEX" ownerName="CROMERO" sourceType="STRING"  >
 			<n0:source><![CDATA[prompt --install
 @@application/set_environment.sql
@@ -14,9 +14,9 @@
 @@application/user_interfaces.sql
 @@application/shared_components/navigation/lists/navigation_menu.sql
 @@application/shared_components/navigation/lists/navigation_bar.sql
+@@application/shared_components/files/icons_app_icon_32_png.sql
 @@application/shared_components/files/icons_app_icon_192_png.sql
 @@application/shared_components/files/icons_app_icon_512_png.sql
-@@application/shared_components/files/icons_app_icon_32_png.sql
 @@application/plugin_settings.sql
 @@application/shared_components/security/authorizations/administration_rights.sql
 @@application/shared_components/navigation/navigation_bar.sql
@@ -27,15 +27,15 @@
 @@application/shared_components/navigation/breadcrumbs/breadcrumb.sql
 @@application/shared_components/navigation/breadcrumbentry.sql
 @@application/shared_components/user_interface/templates/page/drawer.sql
-@@application/shared_components/user_interface/templates/page/left_side_column.sql
-@@application/shared_components/user_interface/templates/page/login.sql
-@@application/shared_components/user_interface/templates/page/modal_dialog.sql
-@@application/shared_components/user_interface/templates/page/right_side_column.sql
-@@application/shared_components/user_interface/templates/page/standard.sql
-@@application/shared_components/user_interface/templates/page/wizard_modal_dialog.sql
 @@application/shared_components/user_interface/templates/page/master_detail.sql
+@@application/shared_components/user_interface/templates/page/modal_dialog.sql
+@@application/shared_components/user_interface/templates/page/login.sql
+@@application/shared_components/user_interface/templates/page/wizard_modal_dialog.sql
+@@application/shared_components/user_interface/templates/page/left_side_column.sql
+@@application/shared_components/user_interface/templates/page/right_side_column.sql
 @@application/shared_components/user_interface/templates/page/left_and_right_side_columns.sql
 @@application/shared_components/user_interface/templates/page/minimal_no_navigation.sql
+@@application/shared_components/user_interface/templates/page/standard.sql
 @@application/shared_components/user_interface/templates/button/icon.sql
 @@application/shared_components/user_interface/templates/button/text.sql
 @@application/shared_components/user_interface/templates/button/text_with_icon.sql
@@ -60,19 +60,19 @@
 @@application/shared_components/user_interface/templates/region/tabs_container.sql
 @@application/shared_components/user_interface/templates/region/title_bar.sql
 @@application/shared_components/user_interface/templates/region/wizard_container.sql
-@@application/shared_components/user_interface/templates/list/badge_list.sql
-@@application/shared_components/user_interface/templates/list/cards.sql
-@@application/shared_components/user_interface/templates/list/links_list.sql
-@@application/shared_components/user_interface/templates/list/media_list.sql
-@@application/shared_components/user_interface/templates/list/menu_bar.sql
-@@application/shared_components/user_interface/templates/list/menu_popup.sql
-@@application/shared_components/user_interface/templates/list/navigation_bar.sql
-@@application/shared_components/user_interface/templates/list/side_navigation_menu.sql
-@@application/shared_components/user_interface/templates/list/tabs.sql
-@@application/shared_components/user_interface/templates/list/top_navigation_mega_menu.sql
-@@application/shared_components/user_interface/templates/list/top_navigation_menu.sql
 @@application/shared_components/user_interface/templates/list/top_navigation_tabs.sql
+@@application/shared_components/user_interface/templates/list/top_navigation_mega_menu.sql
 @@application/shared_components/user_interface/templates/list/wizard_progress.sql
+@@application/shared_components/user_interface/templates/list/menu_bar.sql
+@@application/shared_components/user_interface/templates/list/badge_list.sql
+@@application/shared_components/user_interface/templates/list/media_list.sql
+@@application/shared_components/user_interface/templates/list/side_navigation_menu.sql
+@@application/shared_components/user_interface/templates/list/top_navigation_menu.sql
+@@application/shared_components/user_interface/templates/list/navigation_bar.sql
+@@application/shared_components/user_interface/templates/list/cards.sql
+@@application/shared_components/user_interface/templates/list/tabs.sql
+@@application/shared_components/user_interface/templates/list/menu_popup.sql
+@@application/shared_components/user_interface/templates/list/links_list.sql
 @@application/shared_components/user_interface/templates/report/alerts.sql
 @@application/shared_components/user_interface/templates/report/badge_list.sql
 @@application/shared_components/user_interface/templates/report/cards.sql
@@ -108,8 +108,6 @@
 @@application/user_interfaces/combined_files.sql
 @@application/pages/page_00000.sql
 @@application/pages/page_00001.sql
-@@application/pages/page_00004.sql
-@@application/pages/page_00005.sql
 @@application/pages/page_09999.sql
 @@application/end_environment.sql
 ]]></n0:source>
