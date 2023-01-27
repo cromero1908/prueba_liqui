@@ -5,8 +5,8 @@
 	xmlns:n0="http://www.oracle.com/xml/ns/dbchangelog-ext" 
 	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog 
 	http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
-	<changeSet id="fffa7c477a3358beeafb2d82485ca0f3cb42e71b" author="(CROMERO)-Generated" failOnError="false"   runInTransaction="false"  >
-		<n0:runOracleScript objectName="SCRIPT" objectType="APEX" ownerName="CROMERO" sourceType="STRING"  >
+	<changeSet id="7459d2267b5493e444dcc8f91cc4517e24f08444" author="(APEX2)-Generated" failOnError="false"   runInTransaction="false"  >
+		<n0:runOracleScript objectName="SCRIPT" objectType="APEX" ownerName="APEX2" sourceType="STRING"  >
 			<n0:source><![CDATA[prompt --application/create_application
 begin
 --   Manifest
@@ -15,19 +15,19 @@ begin
 wwv_flow_imp.component_begin (
  p_version_yyyy_mm_dd=>'2022.10.07'
 ,p_release=>'22.2.0'
-,p_default_workspace_id=>3208475405000085
+,p_default_workspace_id=>123456789
 ,p_default_application_id=>100
 ,p_default_id_offset=>0
-,p_default_owner=>'CROMERO'
+,p_default_owner=>'APEX2'
 );
 wwv_flow_imp.create_flow(
  p_id=>wwv_flow.g_flow_id
-,p_owner=>nvl(wwv_flow_application_install.get_schema,'CROMERO')
-,p_name=>nvl(wwv_flow_application_install.get_application_name,'apex')
-,p_alias=>nvl(wwv_flow_application_install.get_application_alias,'APEX')
+,p_owner=>nvl(wwv_flow_application_install.get_schema,'APEX2')
+,p_name=>nvl(wwv_flow_application_install.get_application_name,'apex2')
+,p_alias=>nvl(wwv_flow_application_install.get_application_alias,'APEX2')
 ,p_page_view_logging=>'YES'
 ,p_page_protection_enabled_y_n=>'Y'
-,p_checksum_salt=>'4418320BCA298EF0EAC2EEB6ADF1FC42277E919568F2A276BB747DFEE6B3FCDD'
+,p_checksum_salt=>'598091D86A3281BDB0C40361C4C41427B7FB1B5CE58DD6817E5B5020A3760A57'
 ,p_bookmark_checksum_function=>'SH512'
 ,p_compatibility_mode=>'21.2'
 ,p_flow_language=>'en'
@@ -39,10 +39,10 @@ wwv_flow_imp.create_flow(
 ,p_direction_right_to_left=>'N'
 ,p_flow_image_prefix => nvl(wwv_flow_application_install.get_image_prefix,'')
 ,p_authentication=>'PLUGIN'
-,p_authentication_id=>wwv_flow_imp.id(3213485371014243)
+,p_authentication_id=>wwv_flow_imp.id(3439295983224487)
 ,p_application_tab_set=>1
 ,p_logo_type=>'T'
-,p_logo_text=>'apex'
+,p_logo_text=>'apex2'
 ,p_proxy_server=>nvl(wwv_flow_application_install.get_proxy,'')
 ,p_no_proxy_domains=>nvl(wwv_flow_application_install.get_no_proxy_domains,'')
 ,p_flow_version=>'Release 1.0'
@@ -54,9 +54,9 @@ wwv_flow_imp.create_flow(
 ,p_csv_encoding=>'Y'
 ,p_auto_time_zone=>'N'
 ,p_substitution_string_01=>'APP_NAME'
-,p_substitution_value_01=>'apex'
+,p_substitution_value_01=>'apex2'
 ,p_last_updated_by=>'ADMIN'
-,p_last_upd_yyyymmddhh24miss=>'20230127091009'
+,p_last_upd_yyyymmddhh24miss=>'20230127122223'
 ,p_file_prefix => nvl(wwv_flow_application_install.get_static_app_file_prefix,'')
 ,p_files_version=>4
 ,p_print_server_type=>'NATIVE'

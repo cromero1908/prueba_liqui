@@ -5,8 +5,8 @@
 	xmlns:n0="http://www.oracle.com/xml/ns/dbchangelog-ext" 
 	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog 
 	http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
-	<changeSet id="7ef899d45125db78e18bb6e026f021a9779f93e1" author="(CROMERO)-Generated" failOnError="false"   runInTransaction="false"  >
-		<n0:runOracleScript objectName="SCRIPT" objectType="APEX" ownerName="CROMERO" sourceType="STRING"  >
+	<changeSet id="55e000ab5e9e0baeab34bbf742d036786b4bffa3" author="(APEX2)-Generated" failOnError="false"   runInTransaction="false"  >
+		<n0:runOracleScript objectName="SCRIPT" objectType="APEX" ownerName="APEX2" sourceType="STRING"  >
 			<n0:source><![CDATA[prompt --application/shared_components/user_interface/templates/page/modal_dialog
 begin
 --   Manifest
@@ -15,13 +15,13 @@ begin
 wwv_flow_imp.component_begin (
  p_version_yyyy_mm_dd=>'2022.10.07'
 ,p_release=>'22.2.0'
-,p_default_workspace_id=>3208475405000085
+,p_default_workspace_id=>123456789
 ,p_default_application_id=>100
 ,p_default_id_offset=>0
-,p_default_owner=>'CROMERO'
+,p_default_owner=>'APEX2'
 );
 wwv_flow_imp_shared.create_template(
- p_id=>wwv_flow_imp.id(3221316864014346)
+ p_id=>wwv_flow_imp.id(3447270512224529)
 ,p_theme_id=>42
 ,p_name=>'Modal Dialog'
 ,p_internal_name=>'MODAL_DIALOG'
@@ -153,8 +153,8 @@ wwv_flow_imp_shared.create_template(
 ,p_reference_id=>2098960803539086924
 );
 wwv_flow_imp_shared.create_page_tmpl_display_point(
- p_id=>wwv_flow_imp.id(3221636447014348)
-,p_page_template_id=>wwv_flow_imp.id(3221316864014346)
+ p_id=>wwv_flow_imp.id(3447582271224531)
+,p_page_template_id=>wwv_flow_imp.id(3447270512224529)
 ,p_name=>'Content Body'
 ,p_placeholder=>'BODY'
 ,p_has_grid_support=>true
@@ -165,8 +165,8 @@ wwv_flow_imp_shared.create_page_tmpl_display_point(
 ,p_max_fixed_grid_columns=>12
 );
 wwv_flow_imp_shared.create_page_tmpl_display_point(
- p_id=>wwv_flow_imp.id(3221928461014350)
-,p_page_template_id=>wwv_flow_imp.id(3221316864014346)
+ p_id=>wwv_flow_imp.id(3447819411224534)
+,p_page_template_id=>wwv_flow_imp.id(3447270512224529)
 ,p_name=>'Dialog Header'
 ,p_placeholder=>'REGION_POSITION_01'
 ,p_has_grid_support=>false
@@ -176,8 +176,8 @@ wwv_flow_imp_shared.create_page_tmpl_display_point(
 ,p_glv_new_row=>true
 );
 wwv_flow_imp_shared.create_page_tmpl_display_point(
- p_id=>wwv_flow_imp.id(3222218003014350)
-,p_page_template_id=>wwv_flow_imp.id(3221316864014346)
+ p_id=>wwv_flow_imp.id(3448155195224535)
+,p_page_template_id=>wwv_flow_imp.id(3447270512224529)
 ,p_name=>'Dialog Footer'
 ,p_placeholder=>'REGION_POSITION_03'
 ,p_has_grid_support=>false

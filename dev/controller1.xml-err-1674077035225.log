@@ -1,0 +1,38 @@
+
+######## ERROR SUMMARY ##################
+Run date:    Wed Jan 18 16:23:55 COT 2023
+Error cnt:2
+
+----------------------------
+table/table1_table1.xml
+---------
+Error que empieza en la l?nea: 1 del comando :
+CREATE TABLE "TABLE1"
+   (	"COLUMN1" VARCHAR2(20)
+   ) SEGMENT CREATION IMMEDIATE
+  PCTFREE 10 PCTUSED 40 INITRANS 1 NOCOMPRESS LOGGING
+  STORAGE( INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "APEX_3400839081367328"
+Informe de error -
+ORA-01950: no existen privilegios en tablespace 'APEX_3400839081367328'
+01950. 00000 -  "no privileges on tablespace '%s'"
+*Cause:    User does not have privileges to allocate an extent in the
+           specified tablespace.
+*Action:   Grant the user the appropriate system privileges or grant the user
+           space resource on the tablespace.
+
+----------------------------
+----------------------------
+table/table1_table1.xml
+---------
+Error que empieza en la l?nea: 1 del comando :
+DROP TABLE "TABLE1" CASCADE CONSTRAINTS
+Informe de error -
+ORA-00942: la tabla o vista no existe
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+
+----------------------------

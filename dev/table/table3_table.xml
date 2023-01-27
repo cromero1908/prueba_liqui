@@ -4,8 +4,8 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 	xmlns:n0="http://www.oracle.com/xml/ns/dbchangelog-ext" 
 	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog 
-	http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
-	<changeSet id="d4fc05e316fdb8791ed0c9a5da1deec285c70e24" author="(CROMERO)-Generated"     >
+	http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
+	<changeSet id="d4fc05e316fdb8791ed0c9a5da1deec285c70e24" author="(CROMERO)-Generated" failOnError="false"    >
 		<n0:createSxmlObject objectName="TABLE3" objectType="TABLE" ownerName="CROMERO"   >
 			<n0:source><![CDATA[
   <TABLE xmlns="http://xmlns.oracle.com/ku" version="1.0">
