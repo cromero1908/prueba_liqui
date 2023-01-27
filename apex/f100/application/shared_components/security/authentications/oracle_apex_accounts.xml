@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog 
+	xmlns="http://www.liquibase.org/xml/ns/dbchangelog" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:n0="http://www.oracle.com/xml/ns/dbchangelog-ext" 
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog 
+	http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
+	<changeSet id="e78052348b68aebcee82941883a6e2bba255b018" author="(CROMERO)-Generated" failOnError="false"   runInTransaction="false"  >
+		<n0:runOracleScript objectName="SCRIPT" objectType="APEX" ownerName="CROMERO" sourceType="STRING"  >
+			<n0:source><![CDATA[prompt --application/shared_components/security/authentications/oracle_apex_accounts
+begin
+--   Manifest
+--     AUTHENTICATION: Oracle APEX Accounts
+--   Manifest End
+wwv_flow_imp.component_begin (
+ p_version_yyyy_mm_dd=>'2022.10.07'
+,p_release=>'22.2.0'
+,p_default_workspace_id=>1600932744521351
+,p_default_application_id=>100
+,p_default_id_offset=>0
+,p_default_owner=>'CROMERO'
+);
+wwv_flow_imp_shared.create_authentication(
+ p_id=>wwv_flow_imp.id(1605837536919535)
+,p_name=>'Oracle APEX Accounts'
+,p_scheme_type=>'NATIVE_APEX_ACCOUNTS'
+,p_invalid_session_type=>'LOGIN'
+,p_use_secure_cookie_yn=>'N'
+,p_ras_mode=>0
+);
+wwv_flow_imp.component_end;
+end;
+]]></n0:source>
+		</n0:runOracleScript>
+	</changeSet>
+</databaseChangeLog>

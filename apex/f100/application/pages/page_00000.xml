@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog 
+	xmlns="http://www.liquibase.org/xml/ns/dbchangelog" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:n0="http://www.oracle.com/xml/ns/dbchangelog-ext" 
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog 
+	http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
+	<changeSet id="f17513be7485a20162721e58e956255f3863e242" author="(CROMERO)-Generated" failOnError="false"   runInTransaction="false"  >
+		<n0:runOracleScript objectName="SCRIPT" objectType="APEX" ownerName="CROMERO" sourceType="STRING"  >
+			<n0:source><![CDATA[prompt --application/pages/page_00000
+begin
+--   Manifest
+--     PAGE: 00000
+--   Manifest End
+wwv_flow_imp.component_begin (
+ p_version_yyyy_mm_dd=>'2022.10.07'
+,p_release=>'22.2.0'
+,p_default_workspace_id=>1600932744521351
+,p_default_application_id=>100
+,p_default_id_offset=>0
+,p_default_owner=>'CROMERO'
+);
+wwv_flow_imp_page.create_page(
+ p_id=>0
+,p_name=>'Global Page'
+,p_step_title=>'Global Page'
+,p_autocomplete_on_off=>'OFF'
+,p_page_template_options=>'#DEFAULT#'
+,p_protection_level=>'D'
+,p_page_component_map=>'14'
+,p_last_updated_by=>'ADMIN'
+,p_last_upd_yyyymmddhh24miss=>'20230118152903'
+);
+wwv_flow_imp.component_end;
+end;
+]]></n0:source>
+		</n0:runOracleScript>
+	</changeSet>
+</databaseChangeLog>

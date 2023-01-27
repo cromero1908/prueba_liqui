@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog 
+	xmlns="http://www.liquibase.org/xml/ns/dbchangelog" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:n0="http://www.oracle.com/xml/ns/dbchangelog-ext" 
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog 
+	http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
+	<changeSet id="3de29fe66fbc4c6f88f1e50ff71019c16f1c7248" author="(CROMERO)-Generated" failOnError="false"   runInTransaction="false"  >
+		<n0:runOracleScript objectName="SCRIPT" objectType="APEX" ownerName="CROMERO" sourceType="STRING"  >
+			<n0:source><![CDATA[prompt --application/shared_components/user_interface/templates/button/text_with_icon
+begin
+--   Manifest
+--     BUTTON TEMPLATE: TEXT_WITH_ICON
+--   Manifest End
+wwv_flow_imp.component_begin (
+ p_version_yyyy_mm_dd=>'2022.10.07'
+,p_release=>'22.2.0'
+,p_default_workspace_id=>1600932744521351
+,p_default_application_id=>100
+,p_default_id_offset=>0
+,p_default_owner=>'CROMERO'
+);
+wwv_flow_imp_shared.create_button_templates(
+ p_id=>wwv_flow_imp.id(1781809349920018)
+,p_template_name=>'Text with Icon'
+,p_internal_name=>'TEXT_WITH_ICON'
+,p_template=>'<button class="t-Button t-Button--icon #BUTTON_CSS_CLASSES#" #BUTTON_ATTRIBUTES# onclick="#JAVASCRIPT#" type="button" id="#BUTTON_ID#"><span class="t-Icon t-Icon--left #ICON_CSS_CLASSES#" aria-hidden="true"></span><span class="t-Button-label">#LABEL#'
+||'</span><span class="t-Icon t-Icon--right #ICON_CSS_CLASSES#" aria-hidden="true"></span></button>'
+,p_hot_template=>'<button class="t-Button t-Button--icon #BUTTON_CSS_CLASSES# t-Button--hot" #BUTTON_ATTRIBUTES# onclick="#JAVASCRIPT#" type="button" id="#BUTTON_ID#"><span class="t-Icon t-Icon--left #ICON_CSS_CLASSES#" aria-hidden="true"></span><span class="t-Button-'
+||'label">#LABEL#</span><span class="t-Icon t-Icon--right #ICON_CSS_CLASSES#" aria-hidden="true"></span></button>'
+,p_reference_id=>2081382742158699622
+,p_translate_this_template=>'N'
+,p_theme_class_id=>4
+,p_preset_template_options=>'t-Button--iconLeft'
+,p_theme_id=>42
+);
+wwv_flow_imp.component_end;
+end;
+]]></n0:source>
+		</n0:runOracleScript>
+	</changeSet>
+</databaseChangeLog>

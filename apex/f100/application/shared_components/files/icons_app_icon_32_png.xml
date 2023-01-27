@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog 
+	xmlns="http://www.liquibase.org/xml/ns/dbchangelog" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:n0="http://www.oracle.com/xml/ns/dbchangelog-ext" 
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog 
+	http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
+	<changeSet id="3c8fb8876d33cb844a488d91f0e307f838623b1f" author="(CROMERO)-Generated" failOnError="false"   runInTransaction="false"  >
+		<n0:runOracleScript objectName="SCRIPT" objectType="APEX" ownerName="CROMERO" sourceType="STRING"  >
+			<n0:source><![CDATA[prompt --application/shared_components/files/icons_app_icon_32_png
+begin
+--   Manifest
+--     APP STATIC FILES: 100
+--   Manifest End
+wwv_flow_imp.component_begin (
+ p_version_yyyy_mm_dd=>'2022.10.07'
+,p_release=>'22.2.0'
+,p_default_workspace_id=>1600932744521351
+,p_default_application_id=>100
+,p_default_id_offset=>0
+,p_default_owner=>'CROMERO'
+);
+wwv_flow_imp.g_varchar2_table := wwv_flow_imp.empty_varchar2_table;
+wwv_flow_imp.g_varchar2_table(1) := '89504E470D0A1A0A0000000D4948445200000020000000200806000000737A7AF4000000017352474200AECE1CE900000167494441545847638CCA58FB9F610001E3A8034643603404464380D410F8F1FD23C3FF7F7FB1165D8C4CCC0C1C9CFC24156B24';
+wwv_flow_imp.g_varchar2_table(2) := '1744DFBFBE63E0E416C26A093E395CAE1AFC0EF8FDFB3B031BF34F0625055106763636A282F7D7EFDF0C0F1EBD67F8F19B858185851DAF1E8221C0C1FA952132C492288BD1152D5E719CE1CF7F6ECA1CA0ADCAC56066A24296030E1FBBC970E7E1CF8173';
+wwv_flow_imp.g_varchar2_table(3) := 'C0A9337718AEDEFE463D075CB8FC98E1D7AF5F0C4A0AE20C22C23C2806BF79FB85E1DE83970C6C6C6C0C06BAB26039AA38808FEB1B83AC8C28D840290901067F2F7D86AAA6357031982B1E3F79CDD05617C2B071DB4586672F3E808541629FBE71511602';
+wwv_flow_imp.g_varchar2_table(4) := '52228C0CEA6A726043EE3D78C4A0A62ACD70F3D64B066545291483EFDE7FC6A0AE26CE70EBF65306250588FA9BB71E313C7B83BFC1453017203B80D49438EA00AA840033C3170671513E52431FACFED59BCF94174464D94C822682899004B3C8523AEA80';
+wwv_flow_imp.g_varchar2_table(5) := 'D110180D81010F0100D50CCBE13BF494070000000049454E44AE426082';
+wwv_flow_imp_shared.create_app_static_file(
+ p_id=>wwv_flow_imp.id(1808540316920242)
+,p_file_name=>'icons/app-icon-32.png'
+,p_mime_type=>'image/png'
+,p_file_charset=>'utf-8'
+,p_file_content => wwv_flow_imp.varchar2_to_blob(wwv_flow_imp.g_varchar2_table)
+);
+wwv_flow_imp.component_end;
+end;
+]]></n0:source>
+		</n0:runOracleScript>
+	</changeSet>
+</databaseChangeLog>
